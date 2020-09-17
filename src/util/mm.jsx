@@ -15,9 +15,14 @@ class MUtil {
     return result ? decodeURIComponent(result[2]) : null;
   }
 
+  //正确提示
+  successTips(successMsg) {
+    alert(successMsg || "操作成功");
+  }
+
   //错误提示
   errorTips(errMsg) {
-    alert(errMsg || "hahahah");
+    alert(errMsg || "出现问题啦");
   }
 
   //存储
